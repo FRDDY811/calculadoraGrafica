@@ -1,19 +1,34 @@
 import React from "react"
 import './App.css'
-// import CanvasDraw from "react-canvas-draw"
 import { Bar } from 'react-chartjs-2'
 
 function Graph() {
   const data = {
-    labels: [],
+    labels: [1,2,3,4,5],
     datasets: [{
-      label: 'Grafica',
+      label: 'Graficas',
       backgroundColor: 'red',
       borderColor: 'black',
       borderWidth: 1,
       data: [{
-        x: 0,
-        y: 0
+        x: 1,
+        y: 3
+      },
+      {
+        x: 2,
+        y: 0.5
+      },
+      {
+        x: 3,
+        y: 2.4
+      },
+      {
+        x: 4,
+        y: 1.3
+      },
+      {
+        x: 5,
+        y: 4.4
       }]
     }]
   }
@@ -30,10 +45,8 @@ function Graph() {
       <div className="Graph-inputs">
       <form>
           <label>
-            x:
-              <input type="inputX" name="inputX" size="5" value={10} />
-            y:
-              <input type="inputY" name="inputY"  size="5" value={10}/>
+            <input type="input" placeholder="x" className="inputX" size="5"/>
+            <input type="input"  placeholder="y" className="inputY"  size="5"/>
           </label>
          <input type="submit" value="Calcular Grafica" />
       </form>
