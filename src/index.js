@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-// import ClearButton from './ClearButton'
 import Graph from './Graph'
 import reportWebVitals from './reportWebVitals'
 
@@ -10,9 +9,6 @@ ReactDOM.render(
     <div>
       <Graph />
     </div>
-    {/* <div>
-      <ClearButton />
-    </div> */}
   </React.StrictMode>,
   document.getElementById('root')
 )
